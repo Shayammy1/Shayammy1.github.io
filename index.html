@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Van'Up · ton van, de l'idée à la route</title>
-<meta name="description" content="Van'Up, l'application des vanlifers, sur Android et iPhone : choisir son van d'occasion, chiffrer l'aménagement, le construire étape par étape, puis partir sur les routes d'Europe. En français, en anglais et en allemand, hors ligne, sans compte.">
+<meta name="description" content="Van'Up, l'application des vanlifers, sur Android et iPhone : choisir son van d'occasion, chiffrer l'aménagement, le construire étape par étape, puis partir sur les routes d'Europe et tenir les comptes à plusieurs. En français, en anglais et en allemand, l'essentiel hors ligne, sans compte.">
 <meta name="theme-color" content="#0B2A20">
 <!-- Aperçu du lien quand on le partage (Instagram, WhatsApp, Messenger…). -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://shayammy1.github.io/">
 <meta property="og:title" content="Van'Up · ton van, de l'idée à la route">
-<meta property="og:description" content="Choisir son van, chiffrer l'aménagement, le construire, partir. Une seule app de vanlife, en trois langues et hors ligne.">
+<meta property="og:description" content="Choisir son van, chiffrer l'aménagement, le construire, partir. Une seule app de vanlife, en trois langues, dont l'essentiel marche sans réseau.">
 <meta property="og:image" content="https://shayammy1.github.io/img/apercu.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -204,6 +204,11 @@ section { padding-block: 5rem; }
   font-variant-numeric: tabular-nums;
 }
 .quote b { display: block; }
+.tag {
+  display: inline-block; margin-left: .3rem; padding: .05rem .5rem; border-radius: 999px;
+  background: var(--sand); color: var(--sand-ink); font-size: .75rem; font-weight: 600;
+  vertical-align: .1em;
+}
 .quote span { color: var(--muted); font-size: .86rem; }
 
 /* Gaston */
@@ -316,7 +321,7 @@ footer .legal b { color: var(--ink); font-weight: 600; }
       <div class="reveal">
         <p class="eyebrow">Bientôt sur Android et iPhone · avant-première ouverte</p>
         <h1>Ton van, de l'idée <span class="hand">à la route.</span></h1>
-        <p class="lead">Van'Up t'aide à choisir le bon van d'occasion, à chiffrer son aménagement, à le construire étape par étape, puis à partir sur les routes d'Europe. Une seule app, en français, en anglais et en allemand, qui marche même sans réseau.</p>
+        <p class="lead">Van'Up t'aide à choisir le bon van d'occasion, à chiffrer son aménagement, à le construire étape par étape, puis à partir sur les routes d'Europe. Une seule app, en français, en anglais et en allemand, dont l'essentiel marche même sans réseau.</p>
         <div class="cta">
           <a class="btn btn-main" href="#createurs">Rejoindre l'avant-première</a>
           <a class="btn btn-ghost" href="#route">Découvrir l'app</a>
@@ -324,7 +329,7 @@ footer .legal b { color: var(--ink); font-weight: 600; }
         <ul class="facts">
           <li>Android et iPhone</li>
           <li>Français, English, Deutsch</li>
-          <li>Hors ligne</li>
+          <li>L'essentiel hors ligne</li>
           <li>Sans compte</li>
         </ul>
       </div>
@@ -355,8 +360,8 @@ footer .legal b { color: var(--ink); font-weight: 600; }
   <section id="route">
     <div class="wrap">
       <p class="eyebrow">L'app</p>
-      <h2 class="section-title">Cinq étapes, une seule app</h2>
-      <p class="section-intro">La vanlife ne commence pas sur la route : elle commence devant une annonce, un devis, une tôle à isoler. Van'Up t'accompagne à chaque étape.</p>
+      <h2 class="section-title">Six étapes, une seule app</h2>
+      <p class="section-intro">La vanlife ne commence pas sur la route : elle commence devant une annonce, un devis, une tôle à isoler. Van'Up t'accompagne à chaque étape, jusqu'aux comptes entre amis.</p>
 
       <div class="road">
         <article class="stop reveal">
@@ -432,15 +437,32 @@ footer .legal b { color: var(--ink); font-weight: 600; }
           <div>
             <p class="kicker">Vivre à bord</p>
             <h3>L'entretien et l'autonomie, même au fond d'une vallée</h3>
-            <p>Une fois sur la route, Van'Up suit ce qui doit l'être. Elle sert aussi à qui a déjà un van aménagé.</p>
+            <p>Une fois sur la route, Van'Up suit ce qui doit l'être, en dessins plutôt qu'en tableaux. Elle sert aussi à qui a déjà un van aménagé.</p>
             <ul class="points">
-              <li><span>Un carnet d'entretien selon ton équipement, chaque intervalle avec sa source, et des rappels sur ton téléphone.</span></li>
-              <li><span>Eau, batterie, gaz : l'app apprend ta consommation et te dit combien de jours il te reste.</span></li>
-              <li><span>Tes dépenses, chantier et route, comparées au budget prévu.</span></li>
-              <li><span>À deux dans le van ? Partage le même van, le même projet et les mêmes dépenses.</span></li>
+              <li><span>Ton van en schéma : une pastille par zone (moteur, roues, papiers, toit, cellule), verte, ambre ou rouge selon son entretien.</span></li>
+              <li><span>Un carnet d'entretien selon ton équipement, chaque intervalle avec sa source, les douze prochains mois d'un coup d'œil, et des rappels sur ton téléphone.</span></li>
+              <li><span>Eau, batterie, gaz : chaque réserve dessinée à son niveau. L'app apprend ta consommation et te dit combien de jours il te reste.</span></li>
+              <li><span>Sur Android, un widget sur ton écran d'accueil : « plein » ou « vide » d'un toucher, sans ouvrir l'app.</span></li>
             </ul>
           </div>
-          <img class="phone" src="img/monvan.png" width="780" height="1688" loading="lazy" alt="Mon van : la carte du van, puis l'entretien avec le compteur et les rappels.">
+          <img class="phone" src="img/monvan.png" width="780" height="1688" loading="lazy" alt="Mon van : le van dessiné en ton vert, une pastille par zone (toit, cellule, papiers et moteur à jour, roues en retard), la légende des couleurs et le compteur à 128 000 km.">
+        </article>
+
+        <article class="stop reveal" id="comptes">
+          <span class="marker" aria-hidden="true">6</span>
+          <div>
+            <p class="kicker">Compter</p>
+            <h3>Les comptes du van, à deux ou à plusieurs</h3>
+            <p>Chaque dépense notée en quelques secondes, rangée en trois parties : l'aménagement, les réparations, et les dépenses communes de la route.</p>
+            <ul class="points">
+              <li><span>Qui a payé, pour qui, et qui doit quoi, au centime près, avec le moins de virements possible.</span></li>
+              <li><span>L'aménagement comparé au budget prévu par ton chiffrage.</span></li>
+              <li><span>À deux dans le van ? Partage le même van, le même projet et les mêmes dépenses.</span></li>
+              <li><span>« Scanner un ticket » : le téléphone le lit, même sans réseau, et prépare la dépense : total, date, commerce. Tu vérifies, tu enregistres. <span class="tag">Premium</span></span></li>
+            </ul>
+            <div class="quote"><b>Léa → Toi : 24,45 €</b><span>Un plein, une aire, des courses et un péage à deux : un seul virement pour être quittes</span></div>
+          </div>
+          <img class="phone" src="img/journal.png" width="780" height="1688" loading="lazy" alt="Le Journal : 646 € en octobre, une barre partagée entre aménagement, réparations et dépenses communes, puis « Qui doit quoi » : Léa doit 24,45 € pour être quittes.">
         </article>
       </div>
     </div>
@@ -452,7 +474,7 @@ footer .legal b { color: var(--ink); font-weight: 600; }
         <img src="img/gaston.png" width="720" height="533" loading="lazy" alt="Gaston, un petit fourgon crème et vert aux grands yeux, souriant.">
         <div>
           <h2>Gaston, ton copilote</h2>
-          <p>La mascotte de Van'Up te fait visiter l'app, et glisse un mot au bon moment : quand un choix a un revers, ou quand une règle change à la frontière. Et sur chaque itinéraire, ses petits secrets : ce qu'on n'apprend d'habitude qu'une fois sur place.</p>
+          <p>La mascotte de Van'Up te présente l'app à ton arrivée, en trois écrans et sans une seule question, puis glisse un mot au bon moment : quand un choix a un revers, ou quand une règle change à la frontière. Et sur chaque itinéraire, ses petits secrets : ce qu'on n'apprend d'habitude qu'une fois sur place.</p>
           <div class="bubbles">
             <p class="bubble">« Pas de panique : un kilométrage élevé n'est pas un problème en soi. Un moteur réputé fiable et bien entretenu roule encore longtemps après 150 000 km. »<small>Trouver mon van</small></p>
             <p class="bubble">« Mieux vaut une gaine vide de trop qu'une paroi à rouvrir. »<small>Construire mon van</small></p>
@@ -492,12 +514,12 @@ footer .legal b { color: var(--ink); font-weight: 600; }
         <div class="promise reveal">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
           <h3>Sans compte, sans pub</h3>
-          <p>Tes données restent sur ton téléphone. Le compte ne sert qu'à partager ton van.</p>
+          <p>Tes données restent sur ton téléphone. Le compte ne sert qu'à partager ton van. Seules des statistiques d'usage, sans nom ni montant, nous aident à améliorer l'app, et elles se coupent dans les paramètres.</p>
         </div>
         <div class="promise reveal">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg>
           <h3>L'essentiel en gratuit</h3>
-          <p>Choisir ton van, chiffrer ton projet, suivre ton entretien : sans payer. Un Premium pour aller plus loin.</p>
+          <p>Choisir ton van, chiffrer ton projet, suivre ton entretien, tenir tes comptes : sans payer. Un Premium pour aller plus loin.</p>
         </div>
       </div>
     </div>
