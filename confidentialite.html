@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Confidentialité · Van'Up</title>
+<meta name="description" content="Politique de confidentialité de l'application Van'Up : ce qui reste sur ton téléphone, ce qui part, et comment le couper ou l'effacer.">
+<meta name="theme-color" content="#0B2A20">
+<link rel="icon" type="image/png" href="img/logo.png">
+<style>
+/* La même allure que la page d'accueil, en plus simple : une page de
+   lecture. Polices servies par le site, aucun service tiers. */
+@font-face { font-family: "Inter"; font-weight: 400; font-display: swap; src: url("fonts/Inter-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-display: swap; src: url("fonts/Inter-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/Inter-Bold.ttf") format("truetype"); }
+:root {
+  --page: #0B2A20; --surface: #133A2C; --line: #205C45;
+  --ink: #F1F4EC; --muted: #B4C2B8; --mint: #A7CBB3;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 400 1rem/1.65 "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: var(--mint); }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left, 0px)) 4rem max(16px, env(safe-area-inset-right, 0px)); }
+.top { padding: 1.2rem 0 2rem; }
+.top a { color: var(--muted); text-decoration: none; font-weight: 600; }
+.top a:hover { color: var(--ink); }
+h1 { font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -.035em; line-height: 1.1; margin: 0 0 .6rem; }
+.date { color: var(--muted); margin: 0 0 2rem; }
+.short { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 1.1rem 1.3rem; margin: 0 0 2.5rem; }
+.short p { margin: 0; }
+h2 { font-size: 1.3rem; letter-spacing: -.02em; margin: 2.4rem 0 .7rem; }
+p, li { color: var(--muted); }
+p { margin: 0 0 .9rem; }
+ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+li { margin-bottom: .45rem; }
+b { color: var(--ink); font-weight: 600; }
+footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="index.html">← Van'Up</a></div>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Application Van'Up · mise à jour le 26 octobre 2026</p>
+
+  <div class="short">
+    <p><b>En bref</b> : Van'Up marche sans compte et garde tes données sur ton téléphone. Seules des statistiques d'usage, sans ton prénom, ton van, tes dépenses ni ta position, partent vers un service hébergé en Europe, et tu peux les couper. Pas de publicité, rien n'est vendu.</p>
+  </div>
+
+  <h2>Qui est responsable</h2>
+  <p>Levi Archimede, éditeur de l'application Van'Up. Pour toute question sur tes données : <a href="mailto:contact.vanup@gmail.com">contact.vanup@gmail.com</a>.</p>
+
+  <h2>Ce qui reste sur ton téléphone</h2>
+  <p>Tout ce que tu notes dans l'app est enregistré sur ton téléphone, et nulle part ailleurs :</p>
+  <ul>
+    <li>ton profil et celui de ton van (prénom, modèle, kilométrage, équipement) ;</li>
+    <li>ton chiffrage, ta liste de courses et l'avancement de ton chantier ;</li>
+    <li>ton carnet d'entretien, tes relevés d'eau, de batterie et de gaz ;</li>
+    <li>tes dépenses ;</li>
+    <li>les photos de factures et de tickets que tu prends dans l'app.</li>
+  </ul>
+  <p>Quelques fonctions travaillent elles aussi uniquement sur le téléphone, sans rien envoyer :</p>
+  <ul>
+    <li><b>Ta position</b> (approximative, si tu l'autorises) sert seulement à te proposer le pays de ton van. Elle n'est ni enregistrée ni envoyée.</li>
+    <li><b>La lecture des tickets</b> se fait sur le téléphone, avec la reconnaissance de texte ML Kit de Google, sans envoyer la photo. Google peut recevoir des informations techniques anonymes sur le fonctionnement de cet outil.</li>
+    <li><b>Les rappels d'entretien</b> sont des notifications programmées sur le téléphone.</li>
+    <li><b>La lecture d'une station EcoFlow</b> en Bluetooth écoute le signal que la station diffuse, sans s'y connecter et sans rien envoyer.</li>
+  </ul>
+
+  <h2>Ce qui part du téléphone</h2>
+  <p><b>Les statistiques d'usage.</b> Pour savoir ce qui sert et améliorer l'app, Van'Up envoie des événements à PostHog, hébergé dans l'Union européenne (Francfort, Allemagne) : l'écran ou l'étape ouverte, la variante d'un test de mise en page, une durée, la langue, la version de l'app. Ils sont liés à un identifiant aléatoire créé par l'app, pas à ton nom. Ils ne contiennent jamais ton prénom, ton adresse mail, ton van, tes montants, tes photos, ce que tu écris, ni ta position. Comme pour toute connexion à Internet, PostHog voit l'adresse IP du téléphone ; elle n'est pas conservée. Les événements sont gardés 12 mois au plus. Tu peux couper ces statistiques à tout moment : Paramètres, puis Confidentialité, « Statistiques d'usage ». L'app marche exactement pareil.</p>
+  <p><b>Les signalements d'erreur</b>, si tu en envoies un : le type d'erreur, ta phrase si tu en écris une, l'écran concerné, la langue, le pays de ton van, la version de l'app et la date. Ils sont envoyés à Google Firebase, sans compte et sans ton nom, et ne servent qu'à corriger l'app.</p>
+  <p><b>Le compte, si tu en crées un</b> (il est facultatif et ne sert qu'à partager ton van) : ton adresse mail et ton nom, gérés par Google Firebase. Le van partagé (son profil, son chiffrage, son carnet, ses dépenses) est alors enregistré chez Google Firebase pour que les occupants du van le retrouvent sur leurs téléphones. Les photos de factures et de tickets restent sur ton téléphone : seul leur nom part.</p>
+  <p><b>Les recherches qui demandent du réseau</b> : pour afficher les rappels officiels d'un modèle de van, l'app interroge la base publique RappelConso (data.economie.gouv.fr) avec le nom du modèle, sans rien sur toi. « Y aller » et les liens d'annonces ouvrent Google Maps ou le site de l'annonce, qui ont leurs propres règles.</p>
+
+  <h2>Ce que Van'Up ne fait pas</h2>
+  <ul>
+    <li>Pas de publicité, pas de pistage publicitaire.</li>
+    <li>Aucune donnée vendue ni louée.</li>
+    <li>Pas d'enregistrement de ton écran ni de tes gestes.</li>
+  </ul>
+
+  <h2>Effacer tes données</h2>
+  <ul>
+    <li><b>Sur ton téléphone</b> : « Tout réinitialiser » dans l'app efface ton van, ton projet, ton carnet et leurs photos. Supprimer l'app efface tout.</li>
+    <li><b>Ton compte</b> : « Supprimer mon compte » dans les paramètres efface ton compte et ton adresse de l'annuaire du partage. Le van partagé est effacé si tu en étais le dernier occupant ; sinon, il reste aux autres occupants.</li>
+    <li><b>Le reste</b> (statistiques, signalements) : écris-nous à <a href="mailto:contact.vanup@gmail.com">contact.vanup@gmail.com</a>.</li>
+  </ul>
+
+  <h2>Tes droits</h2>
+  <p>Tu peux demander à accéder à tes données, à les corriger, à les effacer, à les recevoir ou à t'opposer à leur utilisation, en écrivant à <a href="mailto:contact.vanup@gmail.com">contact.vanup@gmail.com</a>. Si tu estimes que tes droits ne sont pas respectés, tu peux t'adresser à la CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>).</p>
+
+  <h2>Les enfants</h2>
+  <p>Van'Up ne s'adresse pas aux moins de 15 ans et ne leur demande aucune donnée.</p>
+
+  <h2>Les changements</h2>
+  <p>Si cette politique change, la nouvelle version est publiée sur cette page, avec sa date.</p>
+
+  <footer>© 2026 Van'Up · <a href="index.html#assistance">Assistance</a> · <a href="index.html#mentions">Mentions légales</a></footer>
+</div>
+</body>
+</html>
