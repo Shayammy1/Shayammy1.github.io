@@ -173,7 +173,7 @@ section { padding-block: 5rem; }
 
 /* La route : chaque étape est un arrêt, reliés par des pointillés. */
 .road { margin-top: 3rem; position: relative; }
-.stop { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) minmax(0, 17rem); gap: 0 2.5rem; align-items: center; position: relative; padding-bottom: 4rem; }
+.stop { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) minmax(0, 25rem); gap: 0 2.5rem; align-items: center; position: relative; padding-bottom: 4rem; }
 .stop:last-child { padding-bottom: 0; }
 .stop::before {
   content: ""; position: absolute; left: 1.75rem; top: 3.5rem; bottom: 0;
@@ -198,6 +198,10 @@ section { padding-block: 5rem; }
 .stop .phone { justify-self: center; max-width: 16rem; }
 .stop:nth-child(even) .phone { transform: rotate(2deg); }
 .stop:nth-child(odd) .phone { transform: rotate(-2deg); }
+.shots { justify-self: center; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; width: 100%; max-width: 25rem; align-items: start; }
+.stop .shots .phone { grid-column: auto; max-width: none; margin: 0; justify-self: stretch; border-width: 6px; border-radius: 28px; }
+.stop .shots .phone:first-child { transform: rotate(-2deg); }
+.stop .shots .phone:last-child { transform: rotate(2deg); margin-top: 3rem; }
 .quote {
   background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
   padding: .85rem 1.05rem; margin-top: 1.2rem; max-width: 36rem; font-size: .95rem;
@@ -296,6 +300,9 @@ footer .legal b { color: var(--ink); font-weight: 600; }
   .stop .marker { width: 2.8rem; height: 2.8rem; font-size: 1.3rem; }
   .stop::before { left: 1.4rem; top: 2.8rem; }
   .stop .phone { grid-column: 2; margin-top: 1.8rem; max-width: 14rem; justify-self: start; }
+  .shots { grid-column: 2; margin-top: 1.8rem; max-width: 24rem; justify-self: start; gap: .7rem; }
+  .stop .shots .phone { border-width: 5px; border-radius: 22px; }
+  .stop .shots .phone:last-child { margin-top: 2rem; }
   .gaston { grid-template-columns: minmax(0, 1fr); }
   .gaston img { max-width: 11rem; }
   .promises, .offers { grid-template-columns: minmax(0, 1fr); }
@@ -392,7 +399,10 @@ footer .legal b { color: var(--ink); font-weight: 600; }
               <li><span>Un modèle te plaît ? « Chiffrer l'aménagement de ce van » : le chiffrage s'ouvre pour lui, sans rien te redemander.</span></li>
             </ul>
           </div>
-          <img class="phone" src="img/trouver.png" width="780" height="1688" loading="lazy" alt="Les modèles et leur fiabilité : filtres par prix, taille et fiabilité, puis la fiche du Renault Kangoo Express Maxi, environ 9 250 €.">
+          <div class="shots">
+            <img class="phone" src="img/trouver.png" width="780" height="1688" loading="lazy" alt="Les modèles et leur fiabilité : filtres par prix, taille et fiabilité, puis la fiche du Renault Kangoo Express Maxi, de 7 500 € à 11 000 €.">
+            <img class="phone" src="img/trouver_2.png" width="780" height="1688" loading="lazy" alt="La suite de la fiche : rappels officiels, contrôles à l'achat, sources, liens d'annonces et « Chiffrer l'aménagement de ce van », puis le Fiat Doblo Cargo Maxi.">
+          </div>
         </article>
 
         <article class="stop reveal">
@@ -410,7 +420,10 @@ footer .legal b { color: var(--ink); font-weight: 600; }
             </ul>
             <div class="quote"><b>Mousse élastomère 19 mm : 5 rouleaux de 4 m²</b><span>16,5 m² avec 10 % de chutes, pour les parois d'un Fiat Ducato L2H2</span></div>
           </div>
-          <img class="phone" src="img/projet.png" width="780" height="1688" loading="lazy" alt="Chiffrer un aménagement : environ 2 200 € estimés, la carte « Mes chiffrages » pour enregistrer et comparer, 42 à 70 heures de chantier, 153 kg ajoutés.">
+          <div class="shots">
+            <img class="phone" src="img/projet.png" width="780" height="1688" loading="lazy" alt="Chiffrer un aménagement : environ 2 200 € estimés, la carte « Mes chiffrages » pour enregistrer et comparer, 42 à 70 heures de chantier, 153 kg ajoutés.">
+            <img class="phone" src="img/projet_2.png" width="780" height="1688" loading="lazy" alt="La suite du chiffrage : les cinq chantiers, l'isolation chiffrée et les autres à commencer, Vie à bord et la liste de courses de 18 articles.">
+          </div>
         </article>
 
         <article class="stop reveal">
@@ -426,7 +439,10 @@ footer .legal b { color: var(--ink); font-weight: 600; }
               <li><span>Le passage en VASP expliqué, avec ses avantages et ses inconvénients.</span></li>
             </ul>
           </div>
-          <img class="phone" src="img/construire.png" width="780" height="1688" loading="lazy" alt="Construire mon van : l'avancement du chantier, la prochaine fiche à suivre, et les phases dans l'ordre : préparer le van, percer la carrosserie, isoler…">
+          <div class="shots">
+            <img class="phone" src="img/construire.png" width="780" height="1688" loading="lazy" alt="Construire mon van : l'avancement du chantier, la prochaine fiche à suivre, et les phases dans l'ordre : préparer le van, percer la carrosserie, isoler…">
+            <img class="phone" src="img/construire_2.png" width="780" height="1688" loading="lazy" alt="La suite des phases : percer la carrosserie, isoler, avant de fermer, habiller, les meubles, l'électricité, l'eau, le chauffage et l'homologation VASP.">
+          </div>
         </article>
 
         <article class="stop reveal">
@@ -443,7 +459,10 @@ footer .legal b { color: var(--ink); font-weight: 600; }
               <li><span>Une carte épurée qui marche sans réseau.</span></li>
             </ul>
           </div>
-          <img class="phone" src="img/tour_europe.png" width="780" height="1688" loading="lazy" alt="Le tour d'Europe dans l'app : la meilleure période, de fin mars à mi-septembre, Gaston qui explique pourquoi le tour part du sud, et la carte des seize étapes, de l'Espagne à la Norvège.">
+          <div class="shots">
+            <img class="phone" src="img/tour_europe.png" width="780" height="1688" loading="lazy" alt="Le tour d'Europe dans l'app : la meilleure période, de fin mars à mi-septembre, Gaston qui explique pourquoi le tour part du sud, et la carte des seize étapes, de l'Espagne à la Norvège.">
+            <img class="phone" src="img/tour_europe_2.png" width="780" height="1688" loading="lazy" alt="La carte des seize étapes et la première, l'Espagne, avec le conseil de Gaston sur la bouteille de gaz avant la frontière.">
+          </div>
         </article>
 
         <article class="stop reveal">
@@ -459,7 +478,10 @@ footer .legal b { color: var(--ink); font-weight: 600; }
               <li><span>Sur Android, un widget sur ton écran d'accueil : « plein » ou « vide » d'un toucher, sans ouvrir l'app.</span></li>
             </ul>
           </div>
-          <img class="phone" src="img/monvan.png" width="780" height="1688" loading="lazy" alt="Mon van : le van dessiné en ton vert, une pastille par zone (toit, cellule, papiers et moteur à jour, roues en retard), la légende des couleurs et le compteur à 128 000 km.">
+          <div class="shots">
+            <img class="phone" src="img/monvan.png" width="780" height="1688" loading="lazy" alt="Mon van : le van dessiné en ton vert, une pastille par zone (toit, cellule, papiers et moteur à jour, roues en retard), la légende des couleurs et le compteur à 128 000 km.">
+            <img class="phone" src="img/monvan_2.png" width="780" height="1688" loading="lazy" alt="La suite de Mon van : les douze prochains mois en pastilles, les rappels, et la pression des pneus en retard, à valider d'un « Fait aujourd'hui ».">
+          </div>
         </article>
 
         <article class="stop reveal" id="comptes">
@@ -476,7 +498,10 @@ footer .legal b { color: var(--ink); font-weight: 600; }
             </ul>
             <div class="quote"><b>Léa → Toi : 24,45 €</b><span>Un plein, une aire, des courses et un péage à deux : un seul virement pour être quittes</span></div>
           </div>
-          <img class="phone" src="img/journal.png" width="780" height="1688" loading="lazy" alt="Le Journal : 646 € en octobre, une barre partagée entre aménagement, réparations et dépenses communes, puis « Qui doit quoi » : Léa doit 24,45 € pour être quittes.">
+          <div class="shots">
+            <img class="phone" src="img/journal.png" width="780" height="1688" loading="lazy" alt="Le Journal : 646 € en octobre, une barre partagée entre aménagement, réparations et dépenses communes, puis « Qui doit quoi » : Léa doit 24,45 € pour être quittes.">
+            <img class="phone" src="img/journal_2.png" width="780" height="1688" loading="lazy" alt="La suite du Journal : qui doit quoi, Léa doit 24,45 € pour être quittes, puis les dernières dépenses à deux.">
+          </div>
         </article>
       </div>
     </div>
